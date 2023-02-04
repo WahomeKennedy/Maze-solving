@@ -1,3 +1,15 @@
+def print_maze(maze):
+    for line in maze:
+        print('   ', end='')
+        for cell in line:
+            if cell == 1:
+                print(colored('##', 'red'), end='')
+            elif cell == 0:
+                print('  ', end='')
+            else:
+                print(colored('**', 'green'), end='')
+        print('\n', end='')
+
 def solve_maze(maze, startX, startY, endX, endY):
     visited = []
     for x, line in enumerate(maze):
