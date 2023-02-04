@@ -46,6 +46,13 @@ def solve_maze(maze, startX, startY, endX, endY):
 
         return visited
 
+def main():
+    visited = solve_maze( 1, 0, 4, 6)
+    print_maze(visited)
+
+if __name__ == '__main__':
+    main()
+
     """class Point:
         def __init__(self, x,y):
             self.x = x
